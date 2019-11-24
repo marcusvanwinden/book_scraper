@@ -11,4 +11,4 @@
 
 ### Description
 
-This program downloads a thousand books from a website, stores it in a CSV file, and inserts it into a MySQL database.
+This program scrapes a thousand books from a website, stores it in a CSV file, and inserts it into a MySQL database.
