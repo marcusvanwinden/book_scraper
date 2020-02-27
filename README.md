@@ -3,8 +3,8 @@
 ### Prerequisites
 
 1. You need to have MySQL installed on your computer.
-2. Set the enviroment variable DB_USER = <YOUR_MYSQL_USER>
-3. Set the environment variable DB_PASS = <YOUR_MYSQL_PASS>
+2. Set the enviroment variable MYSQL_USER = <YOUR_MYSQL_USER>
+3. Set the environment variable MYSQL_PASS = <YOUR_MYSQL_PASS>
 
 ### Installation
 

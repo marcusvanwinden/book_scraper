@@ -6,8 +6,8 @@ import time
 
 database = mysql.connector.connect(
     host = "localhost",
-    user = os.environ["DB_USER"],
-    password = os.environ["DB_PASS"],
+    user = os.environ["MYSQL_USER"],
+    password = os.environ["MYSQL_PASS"],
     database = ""
 )
 
