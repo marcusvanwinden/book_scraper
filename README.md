@@ -1,4 +1,4 @@
-# book_scraper
+# Book Scraper
 
 ### Prerequisites
 
