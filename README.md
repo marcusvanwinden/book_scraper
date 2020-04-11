@@ -2,9 +2,11 @@
 
 ### Prerequisites
 
-1. You need to have MySQL installed on your computer.
-2. Set the enviroment variable MYSQL_USER = <YOUR_MYSQL_USER>
-3. Set the environment variable MYSQL_PASS = <YOUR_MYSQL_PASS>
+1. Install the Microsoft ODBC Driver for SQL Server (https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server?view=sql-server-ver15)
+2. Set environment variable DB_SERVER="<YOUR_SERVER>"
+3. Set environment variable DB_DATABASE="<YOUR_DATABASE>"
+4. Set environment variable DB_USER="<YOUR_USER>"
+5. Set environment variable DB_PASSWORD="<YOUR_PASSWORD>"
 
 ### Installation
 
