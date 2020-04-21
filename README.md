@@ -1,22 +1,46 @@
-# Book Scraper
+<h1>Book Scraper</h1>
 
-### Prerequisites
+<h2>Table of Contents</h2>
+<ol>
+  <li><a href="#description">Description</a></li>
+  <li><a href="#installation">Installation</a></li>
+</ol>
 
-1. Install the Microsoft ODBC Driver for SQL Server<br>(https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server?view=sql-server-ver15)
-2. Set environment variable DB_SERVER="<YOUR_SERVER>"
-3. Set environment variable DB_DATABASE="<YOUR_DATABASE>"
-4. Set environment variable DB_USER="<YOUR_USER>"
-5. Set environment variable DB_PASSWORD="<YOUR_PASSWORD>"
+<h2 id="description">Description</h2>
+<p>This program scrapes a thousand books from a <a href="http://books.toscrape.com">website</a>, writes it to a CSV file, and inserts it into a SQL Server database for further analysis.</p>
 
-### Installation
+<table>
+  <tr>
+    <th>Start</th>
+    <th>Web Scraping</th>
+  </tr>
+  <tr>
+    <td><img src="assets/start.png" width=500></td>
+    <td><img src="assets/scraping.png" width=500></td>
+  </tr>
+  <tr>
+    <th>Writing to CSV File</th>
+    <th>Results</th>
+  </tr>
+  <tr>
+    <td><img src="assets/writing.png" width=500></td>
+    <td><img src="assets/results.png" width=500></td>
+  </tr>
+</table>
 
-1. Download the project
-2. Open the terminal and change directory to the project folder
-3. Type "python3 -m venv venv"
-4. Type "source/venv/bin/activate"
-5. Type "pip3 install -r requirements.txt"
-6. Type "python3 app.py"
+<h2 id="installation">Installation</h2>
 
-### Description
+<p>Install the <a href="https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server?view=sql-server-ver15">Microsoft ODBC Driver for SQL Server</a> first before you run the code below.</p>
 
-This program scrapes a thousand books from a website, stores it in a CSV file, and inserts it into a MySQL database.
+```
+export DB_SERVER=<YOUR_SERVER>
+export DB_DATABASE=<YOUR_DATABASE>
+export DB_USER=<YOUR_USER>
+export DB_PASSWORD=<YOUR_PASSWORD>
+git clone https://github.com/marcusvanwinden/book_scraper.git
+cd book_scraper
+python3 -m venv venv
+source venv/bin/activate
+pip3 install -r requirements.txt
+python3 app.py
+```
