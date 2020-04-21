@@ -6,7 +6,7 @@
   <li><a href="#installation">Installation</a></li>
 </ol>
 
-<h2 id="description">Description</h2>
+<h2 id="description">1. Description</h2>
 <p>This program scrapes a thousand books from a <a href="http://books.toscrape.com">website</a>, writes it to a CSV file, and inserts it into a SQL Server database for further analysis.</p>
 
 <table>
@@ -28,7 +28,7 @@
   </tr>
 </table>
 
-<h2 id="installation">Installation</h2>
+<h2 id="installation">2. Installation</h2>
 
 <p>Install the <a href="https://docs.microsoft.com/en-us/sql/connect/odbc/microsoft-odbc-driver-for-sql-server?view=sql-server-ver15">Microsoft ODBC Driver for SQL Server</a> first before you run the code below.</p>
 
