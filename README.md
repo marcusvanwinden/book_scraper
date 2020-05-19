@@ -29,6 +29,7 @@
 </table>
 
 <h2 id="installation">2. Installation</h2>
+
 ```
 git clone https://github.com/marcusvanwinden/book_scraper.git
 cd book_scraper
