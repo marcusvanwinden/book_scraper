@@ -7,7 +7,7 @@
 </ol>
 
 <h2 id="description">1. Description</h2>
-<p>This program scrapes books from a <a href="http://books.toscrape.com">website</a>, writes it to a CSV file, and inserts it into a SQL Server database for further analysis.</p>
+<p>This program scrapes books from a <a href="http://books.toscrape.com">website</a>, writes it to a CSV file, and inserts it into a database for further analysis.</p>
 
 <table>
   <tr>
