@@ -1,36 +1,22 @@
 # Import required packages
-import pyodbc
+import sqlite3
 import operations
 import os
 import time
 
-# Establish connection with a MSSQL database
-connection = pyodbc.connect(
-    "DRIVER={ODBC Driver 17 for SQL Server};"
-    f"SERVER={os.environ.get('DB_SERVER')};"
-    f"DATABASE={os.environ.get('DB_DATABASE')};"
-    f"UID={os.environ.get('DB_USER')};"
-    f"PWD={os.environ.get('DB_PASSWORD')};",
-    autocommit=True
-)
+# Establish connection with database
+connection = sqlite3.connect("books.db")
 
 # Instantiate cursor
 cursor = connection.cursor()
 
-# Drop table Books if it already exists
-cursor.execute("""
-    IF OBJECT_ID('[dbo].[Books]') IS NOT NULL
-        DROP TABLE [dbo].[Books]
-""")
-
 # Create the books table
 cursor.execute("""
-    CREATE TABLE [dbo].[Books] (
-        [BookId] INTEGER IDENTITY(1, 1),
-        [Title] VARCHAR(100) NOT NULL,
-        [Price] DECIMAL(5, 2),
-        [Stock] INTEGER,
-        CONSTRAINT PK_BookId PRIMARY KEY([BookId])
+    CREATE TABLE IF NOT EXISTS books (
+        BookId INTEGER PRIMARY KEY,
+        Title TEXT NOT NULL,
+        Price DECIMAL(5, 2),
+        Stock INTEGER
     )
 """)
 
